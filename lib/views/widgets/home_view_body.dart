@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_and_adaptive_app/views/widgets/custom_sliver_grid.dart';
+import 'package:responsive_and_adaptive_app/views/widgets/custom_sliver_list.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -20,27 +21,6 @@ class HomeViewBody extends StatelessWidget {
           CustomSliverList(),
         ],
       ),
-    );
-  }
-}
-
-class CustomSliverList extends StatelessWidget {
-  const CustomSliverList({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return SliverList.builder(
-      itemCount: 10,
-      itemBuilder: (context, index) {
-        return Container(
-          margin: const EdgeInsets.fromLTRB(0, 0, 0, 10),
-          height: 100,
-          decoration: BoxDecoration(
-            color: const Color(0xffECECEC),
-            borderRadius: BorderRadius.circular(10),
-          ),
-        );
-      },
     );
   }
 }

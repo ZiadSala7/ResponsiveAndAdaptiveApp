@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_and_adaptive_app/views/home_view.dart';
+import 'package:responsive_and_adaptive_app/views/dash_board_view.dart';
 
 void main() {
   runApp(const ResponsiveAndAdaptiveApp());
@@ -12,7 +12,7 @@ class ResponsiveAndAdaptiveApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeView(),
+      home: DashBoardView(),
     );
   }
 }

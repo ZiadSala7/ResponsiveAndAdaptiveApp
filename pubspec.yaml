@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.5.4
+  sdk: ^3.8.1
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -29,27 +29,25 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   cupertino_icons: ^1.0.8
-  device_preview: ^1.2.0
   flutter:
     sdk: flutter
-  flutter_svg: ^2.0.14
+  flutter_svg: ^2.2.0
 
 dev_dependencies:
-  flutter_lints: ^4.0.0
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^5.0.0
   flutter_test:
     sdk: flutter
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter packages.
-flutter: null
-flutter_assets:
-  assets_path:
-    - assets/images/
-  output_path: lib/utils/
-  filename: app_images.dart
-  field_prefix: null
-  classname: AppImages
+flutter:
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
@@ -58,6 +56,11 @@ flutter_assets:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
+    - assets/images/avatar_3.svg
+    - assets/images/my_transctions.svg
+    - assets/images/statistics.svg
+    - assets/images/wallet_account.svg
+    - assets/images/my_investments.svg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
   # For details regarding adding assets from package dependencies, see
@@ -73,5 +76,14 @@ flutter_assets:
         - asset: assets/fonts/Montserrat-Regular.ttf
         - asset: assets/fonts/Montserrat-Medium.ttf
           weight: 500
+  
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+
+flutter_assets:
+  assets_path:
+    - assets/images/
+  output_path: lib/utils/
+  filename: app_images.dart
+  field_prefix: null
+  classname: AppImages

@@ -113,11 +113,17 @@ double getScaleFactor(context) {
   // double width = physicalWidth / devicePixelRatio;
 
   double width = MediaQuery.sizeOf(context).width;
-  if (width < SizeConfig.tablet) {
-    return width / 550;
-  } else if (width < SizeConfig.desktop) {
-    return width / 1000;
-  } else {
-    return width / 1920;
-  }
+  return width < SizeConfig.tablet
+      ? width / 550
+      : width < SizeConfig.desktop
+      ? width / 1000
+      : width / 200;
+
+  // if (width < SizeConfig.tablet) {
+  //   return width / 550;
+  // } else if (width < SizeConfig.desktop) {
+  //   return width / 1000;
+  // } else {
+  //   return width / 1920;
+  // }
 }

@@ -1,26 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:responsive_and_adaptive_app/models/user_info_model.dart';
 import 'package:responsive_and_adaptive_app/utils/app_styles.dart';
 
 class UserInfoListTtile extends StatelessWidget {
-  final String image, title, subTitle;
   const UserInfoListTtile({
     super.key,
-    required this.image,
-    required this.title,
-    required this.subTitle,
+    required this.model,
   });
 
+  final UserInfoModel model;
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: SvgPicture.asset(image),
+      leading: SvgPicture.asset(model.image),
       title: Text(
-        title,
+        model.title,
         style: AppStyles.styleSemiBold16(context),
       ),
       subtitle: Text(
-        subTitle,
+        model.subTitle,
         style: AppStyles.styleRegular12(context),
       ),
     );

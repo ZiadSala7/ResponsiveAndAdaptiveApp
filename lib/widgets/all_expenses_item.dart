@@ -17,7 +17,7 @@ class AllExpensesItem extends StatelessWidget {
           color: Colors.white30,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
-            side: BorderSide(width: 1, color: Colors.white),
+            side: BorderSide(width: 0.15, color: Colors.grey),
           ),
         ),
         child: Column(

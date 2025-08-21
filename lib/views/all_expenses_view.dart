@@ -12,7 +12,6 @@ class AllExpensesView extends StatelessWidget {
       decoration: ShapeDecoration(
         color: Colors.white,
         shape: RoundedRectangleBorder(
-          side: BorderSide(width: 2, color: Colors.grey),
           borderRadius: BorderRadiusGeometry.circular(12),
         ),
       ),

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../common/custom_decoration_method.dart';
 import '../utils/app_styles.dart';
 
 class MonthlyWidget extends StatelessWidget {

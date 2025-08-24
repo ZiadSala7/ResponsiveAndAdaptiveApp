@@ -11,10 +11,11 @@ class AllExpensesItemBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      spacing: 10,
       children: [
         Text(item.title, style: AppStyles.styleSemiBold16(context)),
+        SizedBox(height: 8),
         Text(item.date, style: AppStyles.styleRegular14(context)),
+        SizedBox(height: 16),
         Text(item.money, style: AppStyles.styleSemiBold24(context)),
       ],
     );

@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
-class AllExpensesItemHeader extends StatelessWidget {
-  final String image;
-  const AllExpensesItemHeader({super.key, required this.image});
+import '../utils/app_styles.dart';
+
+class QuickInvoiceHeader extends StatelessWidget {
+  const QuickInvoiceHeader({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
+        Text('Quick Invoice', style: AppStyles.styleSemiBold20(context)),
         Container(
           width: 60,
           height: 60,
@@ -17,9 +18,8 @@ class AllExpensesItemHeader extends StatelessWidget {
             shape: OvalBorder(),
             color: Color.fromRGBO(255, 255, 255, 0.1),
           ),
-          child: Center(child: SvgPicture.asset(image)),
+          child: Icon(Icons.add, color: Color(0xff4eb7f2)),
         ),
-        Flexible(child: Icon(Icons.arrow_forward_ios)),
       ],
     );
   }

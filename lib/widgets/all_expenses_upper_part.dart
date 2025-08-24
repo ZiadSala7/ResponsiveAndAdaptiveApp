@@ -9,7 +9,7 @@ class AllExpensesUpperPart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(left: 20, right: 20, top: 32),
+      padding: EdgeInsets.symmetric(horizontal: 20),
       decoration: ShapeDecoration(
         color: Colors.white,
         shape: RoundedRectangleBorder(
@@ -18,6 +18,7 @@ class AllExpensesUpperPart extends StatelessWidget {
       ),
       child: Column(
         children: [
+          SizedBox(height: 10),
           AllExpensesHeader(),
           SizedBox(height: 28),
           AllExpensesItems(),

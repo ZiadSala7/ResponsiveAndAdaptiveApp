@@ -24,3 +24,21 @@ List<UserInfoModel> inActives = [
   UserInfoModel(image: AppImages.imagesSettings, title: "Setting System"),
   UserInfoModel(image: AppImages.imagesLogout, title: "Logout Account"),
 ];
+
+List<UserInfoModel> quickInvoices = [
+  UserInfoModel(
+    image: AppImages.imagesAvatar1,
+    title: "Madrani Andi",
+    subTitle: 'Madraniadi20@gmail',
+  ),
+  UserInfoModel(
+    image: AppImages.imagesAvatar2,
+    title: "Josua Nunito",
+    subTitle: 'Josh Nunito@gmail.com',
+  ),
+  UserInfoModel(
+    image: AppImages.imagesAvatar1,
+    title: "Madrani Andi",
+    subTitle: 'Madraniadi20@gmail',
+  ),
+];

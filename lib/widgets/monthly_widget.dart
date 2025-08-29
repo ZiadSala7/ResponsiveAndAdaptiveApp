@@ -19,7 +19,7 @@ class MonthlyWidget extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('Monthly', style: AppStyles.styleMedium16(context)),
+          Text('Monthly', style: AppStyles.styleMedium14(context)),
           SizedBox(width: 18),
           Transform.rotate(
             angle: -1.57079633,

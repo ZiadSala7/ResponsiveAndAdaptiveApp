@@ -2,7 +2,7 @@ import 'package:expandable_page_view/expandable_page_view.dart';
 import 'package:flutter/material.dart';
 
 import 'my_card_details.dart';
-import 'transactions_section.dart';
+import 'my_card_and_transactions_section.dart';
 
 class MyCardPageView extends StatelessWidget {
   const MyCardPageView({super.key});

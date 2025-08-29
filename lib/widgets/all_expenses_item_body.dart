@@ -12,11 +12,16 @@ class AllExpensesItemBody extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(item.title, style: AppStyles.styleSemiBold16(context)),
+        Text(item.title, style: AppStyles.styleBold14(context)),
         SizedBox(height: 8),
         Text(item.date, style: AppStyles.styleRegular14(context)),
         SizedBox(height: 16),
-        Text(item.money, style: AppStyles.styleSemiBold24(context)),
+        Text(
+          item.money,
+          style: AppStyles.styleSemiBold20(
+            context,
+          ).copyWith(color: const Color(0xFF4EB7F2)),
+        ),
       ],
     );
   }

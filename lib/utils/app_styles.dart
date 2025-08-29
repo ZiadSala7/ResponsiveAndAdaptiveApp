@@ -29,6 +29,15 @@ abstract class AppStyles {
     );
   }
 
+  static TextStyle styleMedium14(BuildContext context) {
+    return TextStyle(
+      color: const Color(0xFF064061),
+      fontSize: getResponsiveFontSize(context, fontSize: 14),
+      fontFamily: 'Montserrat',
+      fontWeight: FontWeight.w500,
+    );
+  }
+
   static TextStyle styleMedium20(BuildContext context) {
     return TextStyle(
       color: const Color(0xFFFFFFFF),
@@ -44,6 +53,15 @@ abstract class AppStyles {
       fontSize: getResponsiveFontSize(context, fontSize: 16),
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w600,
+    );
+  }
+
+  static TextStyle styleBold14(BuildContext context) {
+    return TextStyle(
+      color: const Color(0xFF064061),
+      fontSize: getResponsiveFontSize(context, fontSize: 14),
+      fontFamily: 'Montserrat',
+      fontWeight: FontWeight.w900,
     );
   }
 
